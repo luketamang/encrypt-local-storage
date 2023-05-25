@@ -1,0 +1,14 @@
+.navbar {
+    height: 80px;
+}
+
+a {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: none;
+}

@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="m-5 row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form [formGroup]="submitForm" (ngSubmit)="ngSubmit()">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share
+                    your email with anyone else.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-3"></div>
+
+    <hr>
+
+    <br><br>
+    <div class="button">
+        <button class="btn btn-success btn-md"  (click)="decryptData()">Get Encrypt Data</button>
+    </div>
+    <h6 class="text-center text-danger">Decrypted local storage data is : {{decrypteData?.email}}</h6>
+
+
+</div>
